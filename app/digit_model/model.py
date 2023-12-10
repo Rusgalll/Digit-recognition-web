@@ -63,4 +63,5 @@ if __name__ == '__main__':
               epochs=ModelConfig.EPOCHS,
               verbose=1,
               validation_data=(x_test, y_test))
+    
     model.save('digit_recognition_model.keras')
