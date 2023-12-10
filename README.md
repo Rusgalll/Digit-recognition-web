@@ -9,5 +9,6 @@ pip install -r requirements.txt
 uvicorn app.main:app
 ```
 ## Example
-![image](https://github.com/Rusgalll/Digit-recognition-web/assets/88139430/5feeb008-67d3-4646-aba1-005ea2c92fdf)
+![Example](https://github.com/Rusgalll/Digit-recognition-web/assets/88139430/7aecf557-3884-4a5e-af67-b1efa01b14c7)
+
 
