@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Распознавание цифр</title>
+    <link href="index.css" rel="stylesheet"/>
+</head>
+
+<body>
+<div class="waveWrapper waveAnimation">
+    <div class="waveWrapperInner bgTop">
+        <div class="wave waveTop"
+             style="background-image: url('http://front-end-noobs.com/jecko/img/wave-top.png')"></div>
+    </div>
+
+    <div class="waveWrapperInner bgMiddle">
+        <div class="wave waveMiddle"
+             style="background-image: url('http://front-end-noobs.com/jecko/img/wave-mid.png')"></div>
+    </div>
+    <div class="waveWrapperInner bgBottom">
+        <div class="wave waveBottom"
+             style="background-image: url('http://front-end-noobs.com/jecko/img/wave-bot.png')"></div>
+    </div>
+</div>
+
+<svg viewBox="0 0 1100 300">
+    <symbol id="s-text">
+        <text text-anchor="middle" x="50%" y="50%">Распознавание цифр</text>
+    </symbol>
+    <g class="g-ants">
+        <use xlink:href="#s-text" class="text-copy"></use>
+        <use xlink:href="#s-text" class="text-copy"></use>
+        <use xlink:href="#s-text" class="text-copy"></use>
+        <use xlink:href="#s-text" class="text-copy"></use>
+        <use xlink:href="#s-text" class="text-copy"></use>
+    </g>
+</svg>
+
+<a href="#" class="btn" onclick="sendData()">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    Распознать
+</a>
+
+<a href="#" class="btn1" onclick="clearCanvas()">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    Очистить
+</a>
+
+<div class="globalBox">
+    <div class="box">
+        <h1>Рисуйте цифру</h1>
+    <canvas id="canvas" width="300" height="300"></canvas>
+    </div>
+
+    <div class="box2">
+        <p>Распознанная цифра:</p>
+        <div id="output1">ㅤ</div>
+        <p>Вероятность:</p>
+        <div id="output2">ㅤ</div>
+      </div>
+
+    </div>
+</body>
+
+<script src="index.js"></script>
+
+</html>
