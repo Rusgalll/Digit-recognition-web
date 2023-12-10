@@ -32,7 +32,7 @@ async def create_upload_file(file: UploadFile = File(...)):
 
         recognized_digit, probability = recognize_digit(file_path)
 
-        return JSONResponse(content={"recognized_digit": recognized_digit, "probability": float(probability)},
+        return JSONResponse(content={"recognized_digit": recognized_digit, "probability": probability},
                             status_code=200)
     except Exception as e:
         raise HTTPException(status_code=500, detail=f'"error": {str(e)}')
