@@ -24,7 +24,6 @@ def recognize_digit(image_path: str) -> tuple[int, float]:
 
     img = img_to_array(img)
     img = img[np.newaxis, :, :, np.newaxis]
-    print(RecognizePaths.model.summary())
 
     result = RecognizePaths.model.predict([img])[0]
     recognized_digit = int(np.argmax(result))
