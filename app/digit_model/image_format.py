@@ -2,8 +2,8 @@ import os
 from dataclasses import dataclass
 
 import numpy as np
-from PIL import Image
 import keras
+from PIL import Image
 from keras.preprocessing.image import img_to_array
 from keras.models import load_model
 
